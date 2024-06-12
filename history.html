@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-bill History</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .info {
+            background: #f7f7f7;
+            padding: 30px;
+            text-align: center;
+        }
+        .info img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+        .login-form {
+            padding: 30px;
+        }
+        .login-form .form-group {
+            margin-bottom: 20px;
+        }
+        .login-form button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" style="width: 30px;">
+                E-Bill Maharashtra
+            </a>
+            <div class="ml-auto">
+                <div class="btn-group">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Services</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Residential</a></li>
+                            <li><a class="dropdown-item" href="#">Commercial</a></li>
+                            <li><a class="dropdown-item" href="#">Industrial</a></li>
+                            <li><a class="dropdown-item" href="#">Renewable Energy Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Achievements</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Maharashtra Bijli Award</a></li>
+                            <li><a class="dropdown-item" href="#">Electro Star</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">News & Updates</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Online Transaction</a></li>
+                            <li><a class="dropdown-item" href="#">Offline Media</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Contact Us</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pune Branch</a></li>
+                            <li><a class="dropdown-item" href="#">Mumbai Branch</a></li>
+                            <li><a class="dropdown-item" href="#">Nashik Branch</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light">Help</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Left Side - Date Input -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="card-title">Date Selection</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Date Input Form -->
+                        <form>
+                            <div class="mb-3">
+                                <label for="date">Date</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                            <div class="mb-3">
+                                <label for="time">Time</label>
+                                <input type="time" class="form-control" id="time">
+                            </div>
+                            <div class="mb-3">
+                                <label for="day">Day</label>
+                                <input type="text" class="form-control" id="day">
+                            </div>
+                            <div class="mb-3">
+                                <label for="day">Language</label>
+                                <input type="text" class="form-control" id="day">
+                            </div>
+                            <button type="button" class="btn btn-primary">Previous</button>
+                            <button type="button" class="btn btn-primary">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Payment History -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Payment History</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Payment History Table -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>भुगतान की तारीख</th>
+                                    <th>समय</th>
+                                    <th>धनराशि</th>
+                                    <th>स्थिति</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Sample data for payment history -->
+                                <tr>
+                                    <td>१ जनवरी २०२४</td>
+                                    <td>१०:०० AM</td>
+                                    <td>₹५००.००</td>
+                                    <td>सफल</td>
+                                </tr>
+                                <!-- Add more rows for additional payments -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

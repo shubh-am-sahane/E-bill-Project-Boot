@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Bill Feedback</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .info {
+            background: #f7f7f7;
+            padding: 30px;
+            text-align: center;
+        }
+        .info img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+        .login-form {
+            padding: 30px;
+        }
+        .login-form .form-group {
+            margin-bottom: 20px;
+        }
+        .login-form button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" style="width: 30px;">
+                E-Bill Maharashtra
+            </a>
+            <div class="ml-auto">
+                <div class="btn-group">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Services</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Residential</a></li>
+                            <li><a class="dropdown-item" href="#">Commercial</a></li>
+                            <li><a class="dropdown-item" href="#">Industrial</a></li>
+                            <li><a class="dropdown-item" href="#">Renewable Energy Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Achievements</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Maharashtra Bijli Award</a></li>
+                            <li><a class="dropdown-item" href="#">Electro Star</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">News & Updates</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Online Transaction</a></li>
+                            <li><a class="dropdown-item" href="#">Offline Media</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Contact Us</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pune Branch</a></li>
+                            <li><a class="dropdown-item" href="#">Mumbai Branch</a></li>
+                            <li><a class="dropdown-item" href="#">Nashik Branch</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light">Help</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="info col-md-6">
+                <img src="logo.png" alt="E-bill Logo">
+                <h1>E-Bill</h1>
+                <h4>Powering Convenience, Simplifying Bills</h4>
+                <br>
+                <br>
+                <p>We Value Your Feedback
+
+                    At E-Bill, we strive to provide the best possible service to our customers. We sincerely apologize for any inconvenience or issue you may have encountered, and we appreciate you taking the time to bring it to our attention.
+                    
+                    Please use the form below to share your feedback or file a complaint. Our dedicated team will review your message promptly and work to address any concerns you've raised. Rest assured, we are committed to resolving any issues and ensuring your satisfaction with our products and services.
+                    
+                    Thank you for choosing E-bill. We look forward to serving you better in the future.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="card-title">Feedback</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Feedback Form -->
+                        <form>
+                            <div class="mb-3">
+                                <label for="feedback">Feedback</label>
+                                <textarea class="form-control" id="feedback" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Complaint</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Complaint Form -->
+                        <form>
+                            <div class="mb-3">
+                                <label for="complaint">Complaint</label>
+                                <textarea class="form-control" id="complaint" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Complaint</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+    
