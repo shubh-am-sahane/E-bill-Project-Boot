@@ -6,11 +6,13 @@
     <title>E-Bill Payment</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
             background: linear-gradient(to right, #ff7e5f, #feb47b);
-            height: 100vh;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .container {
             background: #fff;
@@ -18,24 +20,27 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             margin-top: 20px;
+            flex: 1;
         }
-        .info {
-            background: #f7f7f7;
-            padding: 30px;
-            text-align: center;
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
-        .info img {
-            max-width: 100px;
+        .form-group {
             margin-bottom: 20px;
         }
-        .login-form {
-            padding: 30px;
-        }
-        .login-form .form-group {
-            margin-bottom: 20px;
-        }
-        .login-form button {
+        .form-control {
             width: 100%;
+        }
+        .btn-primary {
+            width: 100%;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -88,14 +93,15 @@
             </div>
         </div>
     </nav>
-    <!-- Payment Form -->
+
+    <!-- Main Content -->
     <div class="container mt-5">
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title">Bill Payment</h3>
             </div>
             <div class="card-body">
-                <form>
+                <form action="homepage.html">
                     <div class="mb-3">
                         <label for="accountNumber" class="form-label">Account Number</label>
                         <input type="text" class="form-control" id="accountNumber" required>
@@ -115,10 +121,9 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <a href="homepage.html" class="btn btn-primary">Pay Now</a>
+                        <button type="submit" class="btn btn-primary">Pay Now</button>
                     </div>
                 </form>
-
             </div>
         </div>
         <br><br>
@@ -138,17 +143,25 @@
                         </tr>
                     </thead>
                     <tbody>
-            
                         <tr>
                             <td>123456</td>
                             <td>2024-06-10</td>
                             <td>$100.00</td>
                             <td>Success</td>
                         </tr>
-                        
+                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
             </div>
+        </div>
     </div>
- </body>
- </html>   
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 E-Bill Maharashtra. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
